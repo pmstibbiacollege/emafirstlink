@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Your Google Safe Browsing API key
 API_KEY = 'AIzaSyDyOPmvplb1WtijK21xb4ApvRZwCxtsA18'
 # Path to the raw HTML template
-RAW_HTML_FILE_PATH = 'templates/raw.html'
+RAW_HTML_FILE_PATH = 'raw.html'
 # Path to the final index HTML file
 INDEX_HTML_FILE_PATH = 'index.html'
 # Path to the file containing redirect URLs
